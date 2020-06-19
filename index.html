@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies rating list</title>
+    <link rel="stylesheet" href="movie.css">
+</head>
+
+<body>
+    <div class="main-heading">
+        <h1>My Favorite Movies</h1>
+        <form id="movie-form">
+            <div class="form-group">
+                <label for="title">Title </label>
+                <input id="title" type="text" required minlength="2">
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <input type="number" id="rating" required min="0" max="10">
+            </div>
+            <div class="form-group">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <table id="table-headings">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Rating</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="movie.js"></script>
+</body>
+
+</html>
